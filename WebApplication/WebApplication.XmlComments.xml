@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication</name>
+    </assembly>
+    <members>
+        <member name="T:WebApplication.Controllers.WeatherForecastController">
+            <summary>
+            Get to know your local weather!
+            </summary>
+        </member>
+        <member name="M:WebApplication.Controllers.WeatherForecastController.Post(WebApplication.Models.ForecastLocation)">
+            <summary>
+            Check the weather in your specific area.
+            </summary>
+            <param name="location">the general location for your forecast</param>
+            <returns>a detailed forecast of the weather in your area</returns>
+        </member>
+        <member name="T:WebApplication.Models.ForecastLocation">
+            <summary>
+            Where you would like to see forecast info.
+            </summary>
+        </member>
+        <member name="P:WebApplication.Models.ForecastLocation.City">
+            <summary>
+            The city you would like to see the forecast for.
+            </summary>
+        </member>
+        <member name="P:WebApplication.Models.ForecastLocation.State">
+            <summary>
+            The state you would like to see the forecast for.
+            </summary>
+        </member>
+        <member name="P:WebApplication.Models.ForecastLocation.ZipCode">
+            <summary>
+            The zip code you would like to see the forecast for.
+            </summary>
+        </member>
+    </members>
+</doc>
