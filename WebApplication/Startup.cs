@@ -88,6 +88,7 @@ namespace WebApplication
 	            c.ExampleFilters();
             });
             services.AddSwaggerGenNewtonsoftSupport();
+            services.Configure<SwaggerOptions>(c => c.SerializeAsV2 = true);
 
             services.ConfigureSwaggerGen(options =>
             {
@@ -107,7 +108,6 @@ namespace WebApplication
 			
 			app.UseSwagger(c =>
 			{
-				c.SerializeAsV2 = true;
 				c.RouteTemplate = "swagger/{documentName}/swagger.json";
 
 				c.PreSerializeFilters.Add((swaggerDoc, httpReq) =>
